@@ -1,0 +1,137 @@
+<!DOCTYPE html> <!-- Memberi tahu browser bahwa ini dokumen HTML5 -->
+<html lang="id"> <!-- Bahasa halaman: Indonesia -->
+<head> <!-- Bagian informasi halaman (tidak tampil di layar) -->
+  <meta charset="UTF-8"> <!-- Agar huruf & simbol tampil benar -->
+  <!-- Agar tampilan menyesuaikan lebar layar HP, tablet, desktop -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pabrik Tahu Magelang Asli</title> <!-- Judul di tab browser -->
+  <!-- Deskripsi singkat untuk mesin pencari (Google) -->
+  <meta name="description" content="Pabrik tahu Magelang asli, dibuat segar setiap hari dari kedelai pilihan.">
+  <!-- Menghubungkan font Plus Jakarta Sans dari Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"> <!-- Menghubungkan file CSS -->
+</head>
+<body> <!-- Seluruh isi yang tampil di layar -->
+
+  <!-- ===== NAVBAR (menu atas) ===== -->
+  <header class="navbar"> <!-- Pembungkus menu atas -->
+    <div class="container navbar__inner"> <!-- Pembatas lebar konten -->
+      <a href="#beranda" class="logo">🍃 Tahu Magelang</a> <!-- Logo / nama brand -->
+      <nav class="menu"> <!-- Daftar menu -->
+        <a href="#beranda">Beranda</a> <!-- Menuju bagian hero -->
+        <a href="#produk">Produk</a> <!-- Menuju bagian produk -->
+        <a href="#testimoni">Testimoni</a> <!-- Menuju bagian testimoni -->
+        <a href="#lokasi">Lokasi</a> <!-- Menuju bagian lokasi -->
+      </nav>
+      <a href="#kontak" class="btn btn--small">Pesan</a> <!-- Tombol pesan -->
+    </div>
+  </header>
+
+  <!-- ===== HERO (bagian pembuka) ===== -->
+  <section class="hero" id="beranda"> <!-- Bagian paling atas halaman -->
+    <div class="container hero__inner"> <!-- Pembatas konten hero -->
+      <div class="hero__text"> <!-- Kolom teks kiri -->
+        <h1>Pabrik Tahu <span>Magelang Asli</span></h1> <!-- Judul utama -->
+        <p>Tahu segar dibuat setiap hari dari kedelai pilihan dengan resep turun-temurun khas Magelang.</p> <!-- Penjelasan singkat -->
+      </div>
+      <div class="hero__img"> <!-- Kolom gambar kanan -->
+        <!-- GANTI src dengan foto Anda: pemilik / proses pembuatan tahu -->
+        <img src="foto pengrajin pabrik tahu magelang.jpg" alt="Pengrajin pabrik tahu Magelang">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUK ===== -->
+  <section class="section" id="produk"> <!-- Bagian daftar produk -->
+    <div class="container"> <!-- Pembatas konten -->
+      <h2 class="title">Produk Unggulan Kami</h2> <!-- Judul bagian -->
+      <div class="cards"> <!-- Kumpulan kartu (grid) -->
+        <article class="card card--active"> <!-- Kartu 1 (disorot) -->
+          <img src="foto tahu putih.jpg" alt="Tahu putih"> <!-- Foto produk 1 -->
+          <h3>Tahu Putih</h3> <!-- Nama produk -->
+          <p>Lembut, segar, cocok untuk semua masakan.</p> <!-- Deskripsi -->
+        </article>
+        <article class="card"> <!-- Kartu 2 -->
+          <img src="foto tahu goreng.jpg" alt="Tahu goreng"> <!-- Foto produk 2 -->
+          <h3>Tahu Goreng</h3>
+          <p>Renyah di luar, empuk di dalam.</p>
+        </article>
+        <article class="card"> <!-- Kartu 3 -->
+          <img src="foto tahu kuning.jpg" alt="Tahu kuning"> <!-- Foto produk 3 -->
+          <h3>Tahu Kuning</h3>
+          <p>Padat dan gurih, tahan lebih lama.</p>
+        </article>
+        <article class="card"> <!-- Kartu 4 -->
+          <img src="foto tahu bakso.jpg" alt="Tahu bakso"> <!-- Foto produk 4 -->
+          <h3>Tahu Bakso</h3>
+          <p>Isian daging gurih, favorit keluarga.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONI ===== -->
+  <section class="section" id="testimoni"> <!-- Bagian ulasan pelanggan -->
+    <div class="container split"> <!-- Dua kolom: teks + kartu ulasan -->
+      <div>
+        <h2 class="title">Testimoni Pelanggan</h2> <!-- Judul -->
+        <p>Ulasan jujur dari pelanggan yang sudah menjadi langganan kami.</p>
+      </div>
+      <blockquote class="review"> <!-- Kartu ulasan -->
+        <img src="foto ibu siti.jpg" alt="Ibu Siti" class="avatar"> <!-- Foto pelanggan -->
+        <div>
+          <strong>Ibu Siti</strong> <span class="stars">★★★★★</span> <!-- Nama & bintang -->
+          <p>Tahunya segar dan tidak asam. Sudah langganan bertahun-tahun untuk warung saya.</p>
+        </div>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ===== TENTANG KAMI ===== -->
+  <section class="section section--tint"> <!-- Bagian cerita pabrik -->
+    <div class="container split">
+      <div>
+        <h2 class="title">Cita Rasa Magelang yang Terjaga</h2> <!-- Judul -->
+        <p>Kami memadukan resep tradisional dengan kebersihan modern agar setiap potong tahu tetap lezat dan aman.</p>
+        <p>Dari kedelai hingga kemasan, semuanya kami kerjakan sendiri.</p>
+      </div>
+      <img src="foto tim pabrik tahu.jpeg" alt="Tim pabrik tahu"> <!-- Foto tim -->
+    </div>
+  </section>
+
+  <!-- ===== KONTAK (WhatsApp & Email) ===== -->
+  <section class="cta" id="kontak"> <!-- Blok kontak -->
+    <div class="container">
+      <h2>Hubungi Kami</h2> <!-- Judul kontak -->
+      <p>Pesan tahu segar atau tanyakan harga terbaru.</p> <!-- Ajakan singkat -->
+      <div class="contact"> <!-- Pembungkus tombol kontak -->
+        <!-- GANTI 6281234567890 dengan nomor WA Anda (awali 62, tanpa +/0) -->
+        <a class="contact__item" href="https://wa.me/6281567669320" target="_blank" rel="noopener">WhatsApp: 0815-6766-9320</a>
+        <!-- GANTI alamat email di bawah dengan email Anda -->
+        <a class="contact__item" href="mailto:info@tahumagelang.com">Email: info@tahumagelangasli.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER + LOKASI ===== -->
+  <footer class="footer" id="lokasi"> <!-- Bagian paling bawah -->
+    <div class="container footer__grid"> <!-- Grid 3 kolom -->
+      <div>
+        <h3>🍃 Tahu Magelang</h3> <!-- Nama brand -->
+        <p>Pabrik tahu Magelang asli, segar setiap hari.</p>
+      </div>
+      <div>
+        <h4>Alamat</h4> <!-- Judul alamat -->
+        <p>Bandarjo, Ungaran Barat,<br>Semarang, Jawa Tengah</p> <!-- Lokasi pabrik -->
+      </div>
+      <div class="map"> <!-- Peta Google Maps -->
+        <iframe title="Lokasi pabrik tahu" loading="lazy"
+          src="https://www.google.com/maps?q=Bandarjo,Ungaran+Barat,Semarang,Jawa+Tengah&output=embed"></iframe>
+      </div>
+    </div>
+    <p class="copy">© 2026 Pabrik Tahu Magelang Asli. </p> <!-- Hak cipta -->
+  </footer>
+
+</body> <!-- Akhir isi halaman -->
+</html> <!-- Akhir dokumen -->
